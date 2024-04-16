@@ -1,3 +1,4 @@
+// src/components/TextRepeaterButton.js
 import React from 'react'; //optional
 import { useState } from "react";
 
@@ -11,6 +12,7 @@ import { useState } from "react";
 
 		const handleClick = () => {
       setRepetitions(repetitions + 1);
+			props.increaseAnger(0.1);
     }
 
     return (

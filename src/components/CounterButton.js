@@ -1,10 +1,14 @@
+// src/components/CounterButton.js
 import React from 'react'; //optional
 import { useState } from 'react';
 
 function CounterButton(props) {
   const [clickAmount, setClickAmount] = useState(0);
 
-	const handleClick = () => setClickAmount(clickAmount + 1);
+	const handleClick = () => {
+    setClickAmount(clickAmount + 1);
+    props.increaseAnger(0.1);
+  };
 
   return (
     <button onClick={handleClick} className="CounterButton">
